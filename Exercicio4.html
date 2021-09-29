@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <title>SSVP Porto</title>
+      <style>   
+        header{
+          height:200px;
+          padding:10px 20px 10px 10px;
+          background:white;
+        }
+        .log{
+          height:150px;
+          width:300px;
+          float:left;
+        }
+        .gPesquisa{
+          float:right;
+          margin-top:100px;    
+        }
+        #pesquisa{
+          height:30px;
+        }
+        nav{
+          margin-left:30px;
+        }
+        body{
+          background: rgb(0, 0, 200,0.2);
+        }
+        .cadastro{
+          width:1500px;
+          padding:30px 0px 30px 30px;   
+        }
+        textarea{
+          width:600px;
+        }
+        footer{
+          background-color: rgb(0,150, 5,0.3);  
+        }
+       .foot{
+         font-size:14px;
+       }
+       h5{
+         font-size:16px;
+       }
+      </style>
+    </head>
+    <body>
+        <header>        
+          <img class="log" src="imagensProj/logo.PNG"/>  
+            <div class="gPesquisa" >
+              <input type="text" class="form-control-inline btn-outline-light" placeholder=" Faça sua pesquisa" id="pesquisa" >
+              <button type="submit" class="btn btn-info">Pesquisar</button>
+            </div>
+        </header>   
+        <nav class="nav">
+          <nav class="nav nav-item dropdown nav-pills nav-justified ">
+            <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Obras</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Asilo São Vicente Belmont</a>
+            <a class="dropdown-item" href="#">Creche Casa Amor</a>
+            <a class="dropdown-item" href="#">Projeto Arco-iris</a>
+          </nav>
+          <nav class="nav nav-item dropdown nav-pills nav-justified  ">
+            <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SSVP</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">História</a>
+            <a class="dropdown-item" href="#">Organograma</a>
+            <a class="dropdown-item" href="#">Como participar</a>
+            <a class="dropdown-item" href="#">O que fazemos</a>
+            <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SSVP Brasil</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Conselho Nacional</a>
+            <a class="dropdown-item" href="#">Conselhos Metropolitanos</a>
+            <a class="dropdown-item" href="#">Conselhos Centrais</a>
+            <a class="dropdown-item" href="#">Conselhos Particulares</a>
+          </nav>
+          <nav class="nav nav-item dropdown nav-pills nav-justified  ">
+            <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Material de Apoio</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Orações</a>
+            <a class="dropdown-item" href="#">Hinos</a>
+            <a class="dropdown-item" href="#">Materiais à venda</a>
+          </nav>
+          <nav class="nav nav-item dropdown nav-pills nav-justified  ">
+            <a class=" nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SSVP Porto Seguro</a>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Doações</a>
+            <a class="dropdown-item" href="#">Contato</a>
+            <a class="dropdown-item" href="#">Informativo</a>
+          </nav>
+          </nav>
+        <form class="container-fluid">
+          <fieldset class="cadastro">
+            <legend>Atualização do cadastro</legend>
+              <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Nome Completo:</label>
+                <input type="text" class="form-control" id="inputAddress" >
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-4">
+                <label for="inputAddress1" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="inputAddress1" >
+              </div>
+              <div class="col-md-6">
+                <label for="inputAddress2" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Rua, número">
+              </div><br>
+              <div class="col-6">
+                <label for="inputAddress3" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputAddress3" >
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div><br>
+              <div class="col-md-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Informe sua conferência</option>
+                  <option value="1">Conf. Mãe Rainha</option>
+                  <option value="2">Conf. N.Sra. Brasil</option>
+                  <option value="3">Conf. N.Sra. Paz</option>
+                  <option value="4">Conf. N.Sra. Pena</option>
+                  <option value="5">Conf. N.Sra. Saúde</option>
+                </select>
+              </div><br>
+              <div class="col-md-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Selecione seu cargo</option>
+                  <option value="1">presidente</option>
+                  <option value="2">vice-presidente</option>
+                  <option value="3">secretário</option>
+                  <option value="4">segundo-secretário</option>
+                  <option value="5">tesoureiro</option>
+                  <option value="6">segundo-tesoureiro</option>
+                  <option value="7">confrade/consócia</option>
+                  <option value="8">aspirante</option>
+                </select><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Sou proclamado</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Não sou proclamado</label>
+                  </div>
+                  <div class="mb-3"><br>
+                    <label for="formGroupExampleInput" class="form-label">Data da proclamação</label>
+                    <input type="date" class="form-control" id="formGroupExampleInput">
+                  </div>
+              </div>
+              <div class="col-6 mb-3" >
+                <label for="text">Observações</label>
+                <textarea class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-success">Confirmar</button>
+              </div>
+          </fieldset>
+        </form>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h5>Conselho Particular Costa do Descobrimento</h5>
+                <p class="foot">
+                Presidente:Confrade Thiago<br>Email:<br>Tel:<br>Endereço<br>Facebook<br>Instagram:
+                </p>
+              </div>
+              <div class="col-sm">
+                <h5>Conselho Central de Itabuna</h5>
+                <p class="foot">
+                Presidente:Confrade Thiago<br>Email:<br>Tel:<br>Endereço<br>Facebook<br>Instagram:
+                </p>
+              </div>
+              <div class="col-sm">
+                <h5>Conselho Metropolitano Bahia Sergipe</h5>
+                <p class="foot">
+                Presidente:Confrade Thiago<br>Email:<br>Tel:<br>Endereço<br>Facebook<br>Instagram:
+                </p>
+              </div>
+              <div class="col-sm">
+                <h5>Conselho Nacional do Brasil</h5>
+                <p class="foot">
+                Presidente:Confrade Thiago<br>Email:<br>Tel:<br>Endereço<br>Facebook<br>Instagram:
+                </p>
+              </div>
+              <div class="col-sm">
+                <h5>Conselho Geral Intercional</h5>
+                <p class="foot">
+                Presidente:Confrade <br>Email:cgi.communication@ssvpglobal.org<br>
+                Tel:+33(0) 1 53 45 87 53<br>
+                Endereço:65 Rue de la Glacière,75013 Paris,Francia<br>
+                Facebook<br>Instagram:
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
